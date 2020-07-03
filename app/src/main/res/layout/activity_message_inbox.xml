@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/colorWhite"
+    app:cardCornerRadius="6sp"
+    app:cardElevation="5sp"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="@color/colorWhite"
+    tools:context="com.example.smsbroadcast.MessageInbox">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="50dp"
+        android:padding="1sp"
+        android:layout_height="60dp"
+        android:layout_margin="20sp"
+        android:background="@color/colorWhite" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="80sp"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/textNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginHorizontal="200dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/textmessage"
+        android:layout_toRightOf="@+id/textmessage"
+        android:fontFamily="casual"
+        android:text="Hello"
+        android:textAlignment="center"
+        android:padding="5sp"
+        android:textColor="@color/colorblack"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textmessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="Hello"
+        android:padding="5sp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15dp"
+        android:textStyle="normal" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/image"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:padding="5sp"
+        android:text="Hello"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="13dp"
+         />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

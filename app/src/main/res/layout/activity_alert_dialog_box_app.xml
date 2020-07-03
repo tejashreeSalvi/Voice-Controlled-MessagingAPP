@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Relative"
+    android:background="@color/colorWhite"
+    tools:context="com.example.smsbroadcast.AlertDialogBoxApp">
+
+    <com.skyfishjy.library.RippleBackground
+       xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/content"
+        app:rb_color="@color/colorBlue"
+        app:rb_radius="32dp"
+        app:rb_rippleAmount="4"
+        app:rb_duration="3000"
+        app:rb_scale="6">
+
+    <com.varunest.sparkbutton.SparkButton
+        android:id="@+id/hello"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        app:sparkbutton_activeImage="@drawable/microphoneicon"
+        app:sparkbutton_iconSize="140dp"
+        android:layout_centerInParent="true"
+        app:sparkbutton_primaryColor="@color/spark_primary_color"
+        app:sparkbutton_secondaryColor="@color/spark_primary_color"
+        app:sparkbutton_inActiveImage="@drawable/searchone"
+        />
+
+        <TextView
+            android:id="@+id/mic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/hello"
+            android:layout_marginTop="23dp"
+            android:text="Tab a mic"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            />
+    </com.skyfishjy.library.RippleBackground>
+
+</RelativeLayout>
